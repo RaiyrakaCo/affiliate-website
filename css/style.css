@@ -239,17 +239,15 @@ body {
 /* Footer  */
 
 footer {
-  background-color: #505050;
+  background-color: #1e1e1e;
   text-align: center;
-  padding: 1rem 0 2rem;
-  margin-top: 3rem;
+  padding: 1rem 0 4rem;
+  margin-top: 1rem;
+  border-top: 1px solid #fff;
 }
 
 footer .socials {
   padding: 1rem 1rem;
-  margin: auto;
-
-  position: relative;
 }
 
 footer .socials a {
@@ -259,7 +257,7 @@ footer .socials a {
 
 footer .socials a:hover,
 footer .links a:hover {
-  color: #1e1e1e;
+  color: #ffc89e;
 }
 
 footer .links {
@@ -276,7 +274,7 @@ footer .credit {
 }
 
 footer .credit a {
-  color: #1e1e1e;
+  color: #b98055;
   font-weight: 700;
 }
 /* Media Queries */
