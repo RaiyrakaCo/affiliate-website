@@ -1,0 +1,364 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+}
+
+body {
+  font-family: "Poppins";
+  background-color: #1e1e1e;
+  color: #fff;
+  min-height: 0px;
+}
+
+/* Navbar */
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.4rem 6%;
+  background-color: rgb(59, 57, 57, 0.5);
+  border-bottom: 1px solid #3f2b1c;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+}
+
+.navbar .company {
+  font-size: 1.25rem;
+  font-weight: 600;
+  font-style: italic;
+  color: #ffffff;
+}
+
+.navbar .company span {
+  color: #b98055;
+}
+
+.navbar .navbar-nav a {
+  color: #ffffff;
+  display: inline-block;
+  font-size: 1.5rem;
+  margin: 0 1rem;
+}
+
+.navbar .navbar-nav a:hover {
+  color: #b98055;
+}
+
+.navbar .navbar-nav a::after {
+  content: "";
+  display: block;
+  padding-bottom: 0.5rem;
+  border-bottom: 0.1rem solid #ffffff;
+  transform: scaleX(0);
+  transition: 0.2s linear;
+}
+
+.navbar .navbar-nav a:hover::after {
+  transform: scalex(0.5);
+}
+
+.navbar .navbar-icon a {
+  color: #fff;
+  margin: 0 0.5rem;
+}
+
+.navbar .navbar-icon a:hover {
+  color: #3f2b1c;
+}
+
+#menu {
+  display: none;
+}
+/* Hero Section */
+.hero {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  background-image: url(../Material/gambar2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+.hero::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 10%;
+  background: linear-gradient(
+    0deg,
+    rgba(30, 30, 30, 1) 8%,
+    rgba(255, 255, 255, 0) 50%
+  );
+  bottom: 0;
+}
+
+.hero .konten {
+  padding: 1.4rem 7%;
+  max-width: 60rem;
+}
+
+.hero .konten .ajakn {
+  color: #fff;
+  font-weight: 700;
+  font-size: 3rem;
+  line-height: 1;
+}
+
+.hero .konten .ajakn span {
+  color: #3f2b1c;
+}
+.hero .konten .dengn {
+  color: #ffffff;
+
+  font-weight: 275;
+  font-size: 2rem;
+}
+
+.hero .konten a.LinkP {
+  background-color: #3f2b1c;
+  display: inline-block;
+  padding: 1.25rem 5.1rem;
+  border-radius: 0.9rem;
+
+  /* Font */
+  font-weight: 500;
+  font-size: 1.25rem;
+  color: #ffffff;
+  text-align: center;
+}
+
+/* About Section  */
+.about,
+.product,
+.contact {
+  padding: 8.5rem 7% 1.4rem;
+}
+
+.about h2,
+.product h2,
+.contact h2 {
+  text-align: center;
+  font-size: 2rem;
+}
+.about h2 span,
+.product span {
+  color: #b98055;
+}
+
+.about .row {
+  display: flex;
+}
+
+.about .row .isi-img {
+  flex: 1 1 45rem;
+}
+
+.about .row .isi-img img {
+  width: 100%;
+}
+
+.about .row .content {
+  flex: 1 1 35rem;
+  padding: 0 1rem;
+}
+
+.about .row .content h3 {
+  font-size: 2.5rem;
+  margin-bottom: 0.2rem;
+}
+
+.about .row .content p {
+  font-weight: 300;
+  font-size: 1.4rem;
+  margin-bottom: 0.9rem;
+  line-height: 1.5;
+}
+
+/* Product Link */
+
+.product p {
+  text-align: center;
+  max-width: 30rem;
+  margin: auto;
+  font-weight: 400;
+  line-height: 1.6;
+}
+
+.product .row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 7rem;
+  margin-left: 4rem;
+  justify-content: center;
+}
+
+.product-card .shopeelink,
+.lazadalink {
+  text-align: center;
+  padding-bottom: 4rem;
+}
+.product .row .produk-card img {
+  border-radius: 50%;
+  width: 80%;
+}
+/* Shopee Link */
+.product .row .produk-card .shopeelink {
+  margin-top: 0.5rem;
+  margin-right: 3.5rem;
+}
+
+/* Tokopedia Link */
+
+.product .row .produk-card .tokopedialink {
+  margin-top: 0.5rem;
+  margin-right: 3.9rem;
+}
+
+/* TikTok Link */
+.product .row .produk-card .tiktoklink {
+  margin-top: 0.5rem;
+  margin-right: 3.9rem;
+}
+
+/* Lazada Link */
+.product .row .produk-card .lazadalink {
+  margin-top: 0.5rem;
+  margin-right: 3.9rem;
+}
+
+/* Footer  */
+
+footer {
+  background-color: #505050;
+  text-align: center;
+  padding: 1rem 0 2rem;
+  margin-top: 3rem;
+}
+
+footer .socials {
+  padding: 1rem 1rem;
+  margin: auto;
+
+  position: relative;
+}
+
+footer .socials a {
+  color: #fff;
+  margin: 1rem;
+}
+
+footer .socials a:hover,
+footer .links a:hover {
+  color: #1e1e1e;
+}
+
+footer .links {
+  margin-bottom: 1.4rem;
+}
+
+footer .links a {
+  color: #fff;
+  padding: 0.7rem 1rem;
+}
+
+footer .credit {
+  font-size: 0.8rem;
+}
+
+footer .credit a {
+  color: #1e1e1e;
+  font-weight: 700;
+}
+/* Media Queries */
+
+/* Laptop */
+@media (max-width: 1366px) {
+  html {
+    font-size: 75%;
+  }
+}
+
+/* Tablet */
+@media (max-width: 758px) {
+  html {
+    font-size: 62.5%;
+  }
+  #menu {
+    display: inline-block;
+  }
+  .navbar .navbar-nav {
+    position: absolute;
+    top: 100%;
+    right: -100%;
+    background-color: #ffffff;
+    width: 30rem;
+    height: 100vh;
+    transition: 0.3s;
+  }
+  .navbar .navbar-nav.active {
+    right: 0;
+  }
+  .navbar .navbar-nav a {
+    color: #1e1e1e;
+    display: block;
+    margin: 1.5rem;
+    padding: 0.5rem;
+    font-size: 2rem;
+  }
+  .navbar .navbar-nav a::after {
+    content: "";
+    display: block;
+    padding-bottom: 0.5rem;
+    border-bottom: 0.1rem solid #252525;
+    transform: scaleX(0);
+    transition: 0.2s linear;
+    transform-origin: 0 0;
+  }
+  .navbar .navbar-nav a:hover::after {
+    transform: scaleX(0.4);
+  }
+
+  .about .row {
+    flex-wrap: wrap;
+  }
+
+  .about .row .isi-img img {
+    height: 24rem;
+    object-fit: cover;
+    object-position: center;
+  }
+
+  .about .row .content {
+    padding: 0;
+  }
+
+  .about .row .content h3 {
+    margin-top: 1rem;
+    font-size: 2rem;
+  }
+
+  .about .row .content p {
+    font-size: 1.5rem;
+  }
+
+  .product p {
+    font-size: 1.2rem;
+  }
+}
+
+/* Mobile Phone */
+@media (max-width: 450px) {
+  html {
+    font-size: 55%;
+  }
+}
